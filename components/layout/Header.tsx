@@ -22,11 +22,11 @@ export default function Header() {
           className="flex items-center gap-3"
           onClick={() => setMenuOpen(false)}
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#A64AC9] text-sm font-black text-white">
+          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#E87855] text-sm font-black text-white">
             DC
           </span>
-          <span className="text-lg font-extrabold tracking-[-0.05em] text-[#F5E6CC]">
-            AGENTIC<span className="text-[#17E9E0]">.</span>
+          <span className="text-lg font-extrabold tracking-[-0.05em] text-[#D2FDFE]">
+            AGENTIC<span className="text-[#D2FDFE]">.</span>
           </span>
         </Link>
 
@@ -38,7 +38,7 @@ export default function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-[#F5E6CC]/70 transition-colors hover:text-[#17E9E0]"
+              className="text-sm font-medium text-[#F5E6CC]/70 transition-colors hover:text-[#FBE8A6]"
             >
               {item.label}
             </Link>

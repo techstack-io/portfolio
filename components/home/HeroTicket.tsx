@@ -13,14 +13,14 @@ export default function HeroTicket() {
         width={460}
         height={250}
         stubSize={125}
-        background="#F5E6CC"
+        background="#f2f7f7"
         stubBackground="#FCCD04"
         color="#201B2A"
-        borderColor="#A64AC9"
+        borderColor="#C96045"
         radius={16}
         roughness={1.5}
-        rotate={-4}
-        tilt
+        rotate={0}
+
         onTear={() => router.push("/learn/first-lesson")}
         ariaLabel="Tear ticket to start your first AI lesson"
         stub={
@@ -36,7 +36,7 @@ export default function HeroTicket() {
         }
       >
         <div className="flex h-full flex-col justify-between p-7 text-[#201B2A]">
-          <span className="font-mono text-[10px] font-bold uppercase tracking-widest text-[#A64AC9]">
+          <span className="font-mono text-[10px] font-bold uppercase tracking-widest text-[#C96045]">
             DC Agentic / Your invitation
           </span>
 
@@ -46,7 +46,7 @@ export default function HeroTicket() {
               <br />
               AI lesson.
             </h2>
-            <p className="mt-2 text-xl font-bold text-[#A64AC9]">
+            <p className="mt-2 text-xl font-bold text-[#C96045]">
               It's free.
             </p>
           </div>
