@@ -3,9 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --ink: #0a0a0a;
-  --paper: #f2f0e9;
-  --acid: #c7ff3d;
+  --color-background: #201b2a;
+  --color-surface: #2d2639;
+  --color-cream: #f5e6cc;
+  --color-purple: #a64ac9;
+  --color-yellow: #fccd04;
+  --color-peach: #ffb48f;
+  --color-turquoise: #17e9e0;
+  --color-ink: #201b2a;
 }
 
 * {
