@@ -71,10 +71,10 @@ export default function Home() {
             </p>
 
             {/* Interactive BUILDING */}
-            <div className="h-[80px] w-full max-w-[650px] -translate-x-[70px] sm:h-[95px] sm:max-w-[720px] md:h-[110px] md:max-w-[800px] md:-translate-x-[155px]">
+            <div className="h-[80px] w-full max-w-[650px] -translate-x-[70px] sm:h-[95px] sm:max-w-[720px] md:h-[110px] md:max-w-[800px] md:-translate-x-[118px]">
               <TechText
-                text="BUILDING"
-                fontWeight={800}
+                text="DC AGENTIC"
+                fontWeight={600}
                 fontSize={130}
                 letterSpacing={-0.055}
                 color="#c7ff3d"
@@ -90,10 +90,8 @@ export default function Home() {
               />
             </div>
 
-            <h1 className="mt-4 max-w-[900px] text-[56px] font-bold leading-[1.02] tracking-[-0.055em] sm:text-[70px] md:text-[86px] lg:text-[80px]">
-              Intelligent
-              <br />
-              Systems.
+            <h1 className="mt-4 max-w-[900px] text-[56px] font-bold leading-[1.02] tracking-[-0.055em] sm:text-[70px] md:text-[86px] lg:text-[60px]">
+              understanding AI
             </h1>
 
           </div>
@@ -121,7 +119,7 @@ export default function Home() {
       <section id="work" className="mx-auto max-w-[1600px] px-5 py-24 md:px-8 md:py-36">
         <div className="mb-16 grid gap-8 md:grid-cols-12">
           <p className="font-mono text-[11px] uppercase tracking-[.18em] text-acid md:col-span-3">Selected work</p>
-          <h2 className="text-5xl font-bold tracking-tighter2 md:col-span-8 md:text-8xl">
+          <h2 className="text-5xl font-bold tracking-tighter2 md:col-span-8 md:text-6xl">
             Systems with a reason to exist.
           </h2>
         </div>
@@ -185,8 +183,8 @@ export default function Home() {
           />
         </div>
         <div className="relative z-10 mx-auto flex min-h-[70vh] max-w-[1600px] items-center px-5 py-24 md:px-8">
-          <p className="max-w-5xl text-5xl font-bold leading-[.92] tracking-tighter2 md:text-8xl">
-            “The model is one component. The product is the system around it.”
+          <p className="max-w-5xl text-5xl font-bold leading-[.92] tracking-tighter2 md:text-6xl">
+          Clear explanations, practical tutorials, and lessons from building real AI systems.
           </p>
         </div>
       </section>
@@ -195,12 +193,12 @@ export default function Home() {
         <p className="font-mono text-[11px] uppercase tracking-[.18em] text-acid">Have a hard problem?</p>
         <a
           href="mailto:hello@example.com"
-          className="mt-6 block text-[15vw] font-bold uppercase leading-[.8] tracking-tighter2 hover:text-acid md:text-[10vw]"
+          className="mt-6 block text-[15vw] font-bold uppercase leading-[.8] tracking-tighter2 hover:text-acid md:text-[2vw]"
         >
           Let’s talk.
         </a>
         <div className="mt-20 flex flex-col justify-between gap-5 border-t rule pt-5 text-xs uppercase tracking-[.12em] md:flex-row">
-          <p>Dan — AI Engineer</p>
+          <p>Dan Collins | AI Engineer</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-acid">LinkedIn ↗</a>
             <a href="#" className="hover:text-acid">GitHub ↗</a>
