@@ -55,7 +55,7 @@ export default function AboutPage() {
                 onAnimationComplete={() => setShowSecondLine(true)}
               />
 
-              <span className="mt-[6px] block text-[#E87855]">
+              <span className="mt-[6px] block text-[#a6c8ff]">
                 {showSecondLine ? (
                   <StaggeredText
                     text="Grounded in engineering."
