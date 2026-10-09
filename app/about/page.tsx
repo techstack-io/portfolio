@@ -1,5 +1,6 @@
 
 import Link from "next/link";
+import StaggeredText from "@/components/ui/StaggeredText";
 
 const projects = [
   {
