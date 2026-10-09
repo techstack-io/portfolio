@@ -44,7 +44,7 @@ const courses = [
 ];
 
 export default function CourseWheel() {
-  const [selected, setSelected] = useState(0);
+  const [selected, setSelected] = useState(3);
   const course = courses[selected];
 
   return (
@@ -64,7 +64,7 @@ export default function CourseWheel() {
 
         <OptionWheel
           items={courses.map((course) => course.title)}
-          defaultSelected={0}
+          defaultSelected={3}
           onChange={(index) => setSelected(index)}
           fontSize={1.35}
           spacing={1.9}
