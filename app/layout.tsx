@@ -1,6 +1,10 @@
+
 import type { Metadata } from "next";
 import "./globals.css";
 import { Geist, Space_Grotesk } from "next/font/google";
+
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -29,7 +33,11 @@ export default function RootLayout({
       lang="en"
       className={`font-sans ${geist.variable} ${spaceGrotesk.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
