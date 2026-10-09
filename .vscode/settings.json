@@ -28,14 +28,14 @@
         "statusBarItem.warningForeground": "#000000",
         "statusBarItem.warningHoverBackground": "#24f9f2",
         "statusBarItem.warningHoverForeground": "#00000090",
-        "statusBarItem.remoteBackground": "#0E825B",
-        "statusBarItem.remoteForeground": "#97FFDD",
+        "statusBarItem.remoteBackground": "#2E63A4",
+        "statusBarItem.remoteForeground": "#D6E8FF",
         "statusBarItem.remoteHoverBackground": "#3effff",
         "statusBarItem.remoteHoverForeground": "#00000090",
-        "statusBar.background": "#22841B",
-        "statusBar.foreground": "#A8FFA2",
+        "statusBar.background": "#0F7E68",
+        "statusBar.foreground": "#95FFEA",
         "statusBar.border": "#24f9f2",
-        "statusBar.debuggingBackground": "#58BB51",
+        "statusBar.debuggingBackground": "#46B59F",
         "statusBar.debuggingForeground": "#000000",
         "statusBar.debuggingBorder": "#24f9f2",
         "statusBar.noFolderBorder": "#24f9f2",
@@ -56,7 +56,8 @@
         "titleBar.border": "#fcef8a",
         "iLoveWorkSpaceColors": true,
         "iLoveWorkSpaceRandom": false,
-        "statusBarItem.hoverBackground": "#175F2F"
+        "statusBarItem.hoverBackground": "#1C5261"
     },
-    "window.title": "portfolio"
+    "window.title": "portfolio",
+    "folder-color.pathColors": []
 }

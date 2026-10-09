@@ -29,14 +29,14 @@ export default function Footer() {
           <div className="md:col-span-5">
             <Link
               href="/"
-              className="inline-block text-3xl font-black tracking-[-0.06em] text-acid md:text-4xl"
+              className="inline-block text-3xl font-black tracking-[-0.06em] text-[#E77955]md:text-4xl text-white/10"
             >
-              DC AGENTIC<span className="text-white">.</span>
+              DC AGENTIC<span className="text-white/10">.</span>
             </Link>
 
             <h2 className="mt-8 max-w-md text-3xl font-bold leading-tight tracking-tight md:text-4xl">
               Understand AI.
-              <span className="block text-acid">
+              <span className="block text-[#E77955]">
                 Build what matters.
               </span>
             </h2>
@@ -51,7 +51,7 @@ export default function Footer() {
 
           {/* Learning navigation */}
           <div className="md:col-span-2 md:col-start-7">
-            <p className="mb-7 font-mono text-[11px] uppercase tracking-[0.2em] text-acid">
+            <p className="mb-7 font-mono text-[11px] uppercase tracking-[0.2em] text-[#E77955]">
               Learn
             </p>
 
@@ -70,7 +70,7 @@ export default function Footer() {
 
           {/* Explore navigation */}
           <div className="md:col-span-2">
-            <p className="mb-7 font-mono text-[11px] uppercase tracking-[0.2em] text-acid">
+            <p className="mb-7 font-mono text-[11px] uppercase tracking-[0.2em] text-[#E77955]">
               Explore
             </p>
 
@@ -89,7 +89,7 @@ export default function Footer() {
 
           {/* Support */}
           <div className="md:col-span-2">
-            <p className="mb-7 font-mono text-[11px] uppercase tracking-[0.2em] text-acid">
+            <p className="mb-7 font-mono text-[11px] uppercase tracking-[0.2em] text-[#E77955]">
               Support
             </p>
 
@@ -102,7 +102,7 @@ export default function Footer() {
               href="https://www.patreon.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 border-b border-acid pb-1 text-sm font-semibold text-acid transition-colors hover:text-white"
+              className="inline-flex items-center gap-2 border-b border-[#FCCD02] pb-1 text-sm font-semibold text-[#FCCD02] transition-colors hover:text-white"
             >
               Support on Patreon ↗
             </a>
@@ -113,14 +113,14 @@ export default function Footer() {
         <div className="overflow-hidden border-b border-white/15 py-8">
           <p
             aria-hidden="true"
-            className="whitespace-nowrap text-center text-[clamp(3.5rem,12.5vw,12rem)] font-black leading-none tracking-[-0.085em] text-white/[0.07]"
+            className="whitespace-nowrap text-center text-[clamp(3.5rem,12.5vw,12rem)] font-black leading-none tracking-[-0.085em] text-white/[0.03]"
           >
             DC AGENTIC
           </p>
         </div>
 
         {/* Bottom bar */}
-        <div className="flex flex-col gap-5 py-7 font-mono text-[10px] uppercase tracking-[0.15em] text-white/40 md:flex-row md:items-center md:justify-between">
+        <div className="flex flex-col gap-5 py-7 font-mono text-[10px] uppercase tracking-[0.15em] text-[#FCCD02] md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} DC Agentic</p>
 
           <p>Learn / Build / Engineer</p>

@@ -1,6 +1,7 @@
 
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -16,20 +17,21 @@ export default function Header() {
 
   return (
     <header className="absolute inset-x-0 top-0 z-50 border-b border-white/10 bg-[#201B2A]/75 backdrop-blur-xl">
-      <div className="mx-auto flex h-20 max-w-[1600px] items-center justify-between px-5 md:px-8">
-        <Link
-          href="/"
-          className="flex items-center gap-3"
-          onClick={() => setMenuOpen(false)}
-        >
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#E87855] text-sm font-black text-white">
-            DC
-          </span>
-          <span className="text-lg font-extrabold tracking-[-0.05em] text-[#D2FDFE]">
-            AGENTIC<span className="text-[#D2FDFE]">.</span>
-          </span>
-        </Link>
+      <div className="mx-auto flex h-20 max-w-[1600px] items-center justify-between px-5 md:px-10">
+      <Link href="/" className="flex items-center gap-4">
+      <Image
+        src="/logos/dcagentic.svg"
+        alt="DC Agentic"
+        width={180}
+        height={48}
+        priority
+        className="h-auto w-[60px]"
+      />
 
+      <span className="font-hero font-medium whitespace-nowrap text-xl uppercase tracking-[-0.035em] text-[#F5E8D2] md:text-2xl">
+        DC <span className="text-[#F5E8D2]">AGENTIC</span>
+      </span>
+    </Link>
         <nav
           aria-label="Main navigation"
           className="hidden items-center gap-9 md:flex"

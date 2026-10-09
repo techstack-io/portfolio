@@ -44,8 +44,7 @@ export default function Hero() {
           </p>
           </div>
 
-
-          <h1 className="max-w-[650px] text-[clamp(2rem,3.1vw,3.5rem)] font-bold leading-[1.12] tracking-[-0.045em]">
+          <h1 className="font-hero max-w-[650px] font-medium text-[clamp(2rem,3.1vw,3.1rem)] leading-[1.2] tracking-[-0.035em]">
             Understand AI.
             <span className="mt-2 block text-[#E87855]">
               Build what matters.
