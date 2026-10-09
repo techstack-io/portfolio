@@ -40,7 +40,7 @@ export default function AboutPage() {
       <div className="mx-auto max-w-7xl px-6 pb-24 pt-36 md:px-12 md:pt-40">
 
         {/* ABOUT HERO */}
-        <section className="grid min-h-[calc(100svh-10rem)] items-center gap-12 pb-20 lg:grid-cols-[1fr_1fr] lg:gap-12">
+        <section className="grid items-center gap-12 pb-20 lg:min-h-[650px] lg:grid-cols-[1fr_1fr] lg:gap-12">
           <div>
             <p className="mb-7 font-mono text-[10px] uppercase tracking-[0.22em] text-[#B5E0E4]">
               ● DC AGENTIC / ABOUT
