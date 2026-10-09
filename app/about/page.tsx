@@ -41,7 +41,7 @@ export default function AboutPage() {
 
         {/* ABOUT HERO */}
         <section className="grid items-center gap-12 pb-20 lg:min-h-[650px] lg:grid-cols-[1fr_1fr] lg:gap-12">
-          <div>
+          <div className="lg:-translate-y-16">
             <p className="mb-7 font-mono text-[10px] uppercase tracking-[0.22em] text-[#B5E0E4]">
               ● DC AGENTIC / ABOUT
             </p>
