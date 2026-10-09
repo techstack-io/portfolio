@@ -21,7 +21,7 @@ export default function HeroHeadlineText() {
         onAnimationComplete={handleFirstLineComplete}
       />
 
-      <span className="mt-[6px] block text-[#B388FF]">
+      <span className="mt-[6px] block text-[#a6c8ff]">
         {showSecondLine ? (
           <StaggeredText
             text="One lesson at a time."
