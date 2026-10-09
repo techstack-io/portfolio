@@ -32,7 +32,7 @@ const projects = [
 ];
 
 export default function AboutPage() {
-  return (
+  const [showSecondLine, setShowSecondLine] = useState(false);
     <main className="min-h-screen bg-[#201B2A] text-[#F5E8D2]">
       <div className="mx-auto max-w-7xl px-6 pb-24 pt-24 md:px-12">
         <section className="max-w-4xl pb-20">
