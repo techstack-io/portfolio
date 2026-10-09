@@ -2,6 +2,8 @@
 import Link from "next/link";
 import DotField from "@/components/ui/DotField";
 import HeroTicket from "./HeroTicket";
+import HeroHeadlineText from "./HeroHeadlineText";
+
 
 export default function Hero() {
   return (
@@ -44,13 +46,7 @@ export default function Hero() {
           </p>
           </div>
 
-          <h1 className="font-hero max-w-[650px] font-medium text-[clamp(2rem,3.1vw,3.1rem)] leading-[1.2] tracking-[-0.035em]">
-            Understand AI.
-            <span className="mt-2 block text-[#E87855]">
-              Build what matters.
-            </span>
-          </h1>
-
+          <HeroHeadlineText />
 
           <p className="mt-6 max-w-[540px] text-[17px] leading-7 text-[#F5E6CC]/70">
             Artificial intelligence explained for everyone.

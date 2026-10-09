@@ -58,6 +58,6 @@
         "iLoveWorkSpaceRandom": false,
         "statusBarItem.hoverBackground": "#1C5261"
     },
-    "window.title": "portfolio",
-    "folder-color.pathColors": []
+    "folder-color.pathColors": [],
+    "window.title": "portfolio"
 }
