@@ -48,7 +48,7 @@ export default function CourseWheel() {
   const course = courses[selected];
 
   return (
-    <div className="relative w-full max-w-[520px]">
+    <div className="relative h-full w-full">
       <div className="mb-4 flex items-center justify-between">
         <span className="font-mono text-[10px] tracking-[0.2em] text-[#B5E0E4]">
           EXPLORE THE CURRICULUM
@@ -59,7 +59,7 @@ export default function CourseWheel() {
         </span>
       </div>
 
-      <div className="relative h-[340px] overflow-hidden rounded-2xl border border-white/10 bg-white/[0.025]">
+      <div className="relative h-[520px] w-full overflow-hidden md:h-[620px] lg:h-[680px]">
         <div className="pointer-events-none absolute inset-x-0 top-1/2 z-10 -translate-y-1/2 border-y border-[#E87855]/30 bg-[#E87855]/[0.06] py-9" />
 
         <OptionWheel
