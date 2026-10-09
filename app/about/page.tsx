@@ -1,9 +1,9 @@
-
 "use client";
 
 import Link from "next/link";
 import { useState } from "react";
 import StaggeredText from "@/components/ui/StaggeredText";
+import CourseWheel from "@/components/about/CourseWheel";
 
 const projects = [
   {
@@ -40,45 +40,49 @@ export default function AboutPage() {
       <div className="mx-auto max-w-7xl px-6 pb-24 pt-36 md:px-12 md:pt-40">
 
         {/* ABOUT HERO */}
-        <section className="max-w-4xl pb-20">
-          <p className="mb-7 font-mono text-[10px] uppercase tracking-[0.22em] text-[#B5E0E4]">
-            ● DC AGENTIC / ABOUT
-          </p>
+        <section className="grid items-center gap-12 pb-20 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+          <div>
+            <p className="mb-7 font-mono text-[10px] uppercase tracking-[0.22em] text-[#B5E0E4]">
+              ● DC AGENTIC / ABOUT
+            </p>
 
-          <h1 className="font-hero max-w-[850px] text-[clamp(2rem,3.1vw,3.1rem)] font-medium leading-[1.15] tracking-[-0.035em]">
-            <StaggeredText
-              text="Built from curiosity."
-              delay={140}
-              duration={0.7}
-              className="block text-[#F5E8D2]"
-              onAnimationComplete={() => setShowSecondLine(true)}
-            />
+            <h1 className="font-hero text-[clamp(2rem,3.1vw,3.1rem)] font-medium leading-[1.15] tracking-[-0.035em]">
+              <StaggeredText
+                text="Built from curiosity."
+                delay={140}
+                duration={0.7}
+                className="block text-[#F5E8D2]"
+                onAnimationComplete={() => setShowSecondLine(true)}
+              />
 
-            <span className="mt-[6px] block text-[#E87855]">
-              {showSecondLine ? (
-                <StaggeredText
-                  text="Grounded in engineering."
-                  delay={140}
-                  duration={0.7}
-                  className="block"
-                />
-              ) : (
-                <span
-                  className="invisible block"
-                  aria-hidden="true"
-                >
-                  Grounded in engineering.
-                </span>
-              )}
-            </span>
-          </h1>
+              <span className="mt-[6px] block text-[#E87855]">
+                {showSecondLine ? (
+                  <StaggeredText
+                    text="Grounded in engineering."
+                    delay={140}
+                    duration={0.7}
+                    className="block"
+                  />
+                ) : (
+                  <span className="invisible block" aria-hidden="true">
+                    Grounded in engineering.
+                  </span>
+                )}
+              </span>
+            </h1>
 
-          <p className="mt-9 max-w-2xl text-lg leading-8 text-[#B9B0B4]">
-            DC Agentic is an independent AI education platform
-            built around a simple idea: understanding how
-            technology works matters more than memorizing
-            which tools to use.
-          </p>
+            <p className="mt-9 max-w-2xl text-lg leading-8 text-[#B9B0B4]">
+              DC Agentic is an independent AI education platform
+              built around a simple idea: understanding how
+              technology works matters more than memorizing
+              which tools to use.
+            </p>
+          </div>
+
+          {/* RIGHT SIDE: INTERACTIVE COURSE WHEEL */}
+          <div className="flex min-w-0 items-center justify-center lg:justify-end">
+            <CourseWheel />
+          </div>
         </section>
 
         {/* BACKGROUND */}
