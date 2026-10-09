@@ -36,7 +36,7 @@ export default function Footer() {
 
             <h2 className="mt-8 max-w-md text-3xl font-bold leading-tight tracking-tight md:text-4xl">
               Understand AI.
-              <span className="block text-[#E77955]">
+              <span className="block text-[#A6C8FF]">
                 Build what matters.
               </span>
             </h2>
@@ -51,7 +51,7 @@ export default function Footer() {
 
           {/* Learning navigation */}
           <div className="md:col-span-2 md:col-start-7">
-            <p className="mb-7 font-mono text-[11px] uppercase tracking-[0.2em] text-[#E77955]">
+            <p className="mb-7 font-mono text-[11px] uppercase tracking-[0.2em] text-[#A6C8FF]">
               Learn
             </p>
 
@@ -70,7 +70,7 @@ export default function Footer() {
 
           {/* Explore navigation */}
           <div className="md:col-span-2">
-            <p className="mb-7 font-mono text-[11px] uppercase tracking-[0.2em] text-[#E77955]">
+            <p className="mb-7 font-mono text-[11px] uppercase tracking-[0.2em] text-[#A6C8FF]">
               Explore
             </p>
 
@@ -89,7 +89,7 @@ export default function Footer() {
 
           {/* Support */}
           <div className="md:col-span-2">
-            <p className="mb-7 font-mono text-[11px] uppercase tracking-[0.2em] text-[#E77955]">
+            <p className="mb-7 font-mono text-[11px] uppercase tracking-[0.2em] text-[#A6C8FF]">
               Support
             </p>
 
