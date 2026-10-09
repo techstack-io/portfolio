@@ -40,7 +40,7 @@ export default function AboutPage() {
       <div className="mx-auto max-w-7xl px-6 pb-24 pt-36 md:px-12 md:pt-40">
 
         {/* ABOUT HERO */}
-        <section className="grid items-center gap-12 pb-20 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+        <section className="grid min-h-[calc(100svh-10rem)] items-center gap-12 pb-20 lg:grid-cols-[1fr_1fr] lg:gap-12">
           <div>
             <p className="mb-7 font-mono text-[10px] uppercase tracking-[0.22em] text-[#B5E0E4]">
               ● DC AGENTIC / ABOUT
@@ -80,7 +80,7 @@ export default function AboutPage() {
           </div>
 
           {/* RIGHT SIDE: INTERACTIVE COURSE WHEEL */}
-          <div className="flex min-w-0 items-center justify-center lg:justify-end">
+          <div className="flex h-full min-w-0 items-center justify-center">
             <CourseWheel />
           </div>
         </section>
