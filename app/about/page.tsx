@@ -37,7 +37,7 @@ export default function AboutPage() {
             ● DC AGENTIC / ABOUT
           </p>
 
-          <h1 className="font-hero text-[clamp(2.8rem,6vw,5.5rem)] font-medium leading-[1.08] tracking-[-0.045em]">
+          <h1 className="font-hero max-w-[650px] text-[clamp(2rem,3.1vw,3.1rem)] font-medium leading-[1.15] tracking-[-0.035em]">
             Built from curiosity.
             <span className="mt-2 block text-[#E87855]">
               Grounded in engineering.
