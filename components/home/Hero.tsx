@@ -4,14 +4,13 @@ import DotField from "@/components/ui/DotField";
 import HeroTicket from "./HeroTicket";
 import HeroHeadlineText from "./HeroHeadlineText";
 
-
 export default function Hero() {
   return (
     <section
       id="top"
       className="relative isolate min-h-screen overflow-visible bg-[#201B2A] text-[#F5E6CC]"
     >
-      {/* DotField background */}
+      {/* Interactive dotted background */}
       <div className="absolute inset-0 z-0">
         <DotField
           dotRadius={1.5}
@@ -33,28 +32,32 @@ export default function Hero() {
       <div className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-r from-[#201B2A]/65 via-[#201B2A]/20 to-transparent" />
 
       {/* Main hero layout */}
-      <div className="relative z-10 mx-auto grid min-h-[90vh] max-w-[1600px] items-center gap-8 px-5 pb-12 pt-20 md:grid-cols-12 md:px-8">
+      <div className="relative z-10 mx-auto grid min-h-screen max-w-[1600px] items-center gap-10 px-5 pb-16 pt-28 md:grid-cols-12 md:gap-8 md:px-8 md:pb-12 md:pt-24 lg:min-h-[calc(100svh-5rem)]">
 
         {/* Left column */}
         <div className="relative z-20 md:col-span-7">
 
-          <div className="mb-5 flex items-center gap-3">
-          <span className="h-2 w-2 rounded-full bg-[#B4DFE5]" />
+          {/* Eyebrow */}
+          <div className="mb-6 flex items-center gap-3">
+            <span className="h-2 w-2 rounded-full bg-[#B4DFE5]" />
 
-          <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-[#B4DFE5] sm:text-[11px]">
-            AI Education / Exploration / Engineering
-          </p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-[#B4DFE5] sm:text-[11px]">
+              AI Education / Exploration / Engineering
+            </p>
           </div>
 
+          {/* Animated headline */}
           <HeroHeadlineText />
 
-          <p className="mt-6 max-w-[540px] text-[17px] leading-7 text-[#F5E6CC]/70">
+          {/* Introduction */}
+          <p className="mt-7 max-w-[540px] text-[17px] leading-7 text-[#F5E6CC]/70">
             Artificial intelligence explained for everyone.
             From your first question to building reliable AI
             applications, learn the concepts, tools, and
             engineering principles that matter.
           </p>
 
+          {/* Calls to action */}
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link
               href="/learn"
@@ -70,7 +73,7 @@ export default function Hero() {
             >
               Explore the Paths
               <span aria-hidden="true">↓</span>
-          </Link>
+            </Link>
           </div>
 
           {/* Learning path indicators */}
@@ -80,7 +83,10 @@ export default function Hero() {
               ["02", "Build"],
               ["03", "Engineer"],
             ].map(([number, label]) => (
-              <div key={number} className="flex items-center gap-2">
+              <div
+                key={number}
+                className="flex items-center gap-2"
+              >
                 <span className="font-mono text-[10px] text-[#17E9E0]">
                   {number}
                 </span>
@@ -93,9 +99,9 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right column: Lanyard */}
-        <div className="relative z-10 min-w-0 overflow-visible md:col-span-5">
-            <HeroTicket />
+        {/* Right column: Interactive ticket */}
+        <div className="relative z-10 flex min-w-0 items-center justify-center overflow-visible md:col-span-5 lg:-translate-y-8">
+          <HeroTicket />
         </div>
 
       </div>
