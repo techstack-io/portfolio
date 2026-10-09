@@ -36,7 +36,7 @@ export default function HeroTicket() {
         }
       >
         <div className="flex h-full flex-col justify-between p-7 text-[#201B2A]">
-          <span className="font-mono text-[10px] font-bold uppercase tracking-widest text-[#a6c8ff]">
+          <span className="font-mono text-[10px] font-bold uppercase tracking-widest text-[#4A7BB0]">
             DC Agentic / Your invitation
           </span>
 
@@ -46,7 +46,7 @@ export default function HeroTicket() {
               <br />
               AI lesson.
             </h2>
-            <p className="mt-2 text-xl font-bold text-[#a6c8ff]">
+            <p className="mt-2 text-xl font-bold text-[#4A7BB0]">
               It's free.
             </p>
           </div>
