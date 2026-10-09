@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from "next/link";
@@ -33,21 +34,26 @@ const projects = [
 
 export default function AboutPage() {
   const [showSecondLine, setShowSecondLine] = useState(false);
+
+  return (
     <main className="min-h-screen bg-[#201B2A] text-[#F5E8D2]">
-      <div className="mx-auto max-w-7xl px-6 pb-24 pt-24 md:px-12">
+      <div className="mx-auto max-w-7xl px-6 pb-24 pt-36 md:px-12 md:pt-40">
+
+        {/* ABOUT HERO */}
         <section className="max-w-4xl pb-20">
           <p className="mb-7 font-mono text-[10px] uppercase tracking-[0.22em] text-[#B5E0E4]">
             ● DC AGENTIC / ABOUT
           </p>
 
-          <h1 className="font-hero max-w-[650px] text-[clamp(2rem,3.1vw,3.1rem)] font-medium leading-[1.15] tracking-[-0.035em]">
+          <h1 className="font-hero max-w-[850px] text-[clamp(2rem,3.1vw,3.1rem)] font-medium leading-[1.15] tracking-[-0.035em]">
             <StaggeredText
               text="Built from curiosity."
               delay={140}
               duration={0.7}
               className="block text-[#F5E8D2]"
+              onAnimationComplete={() => setShowSecondLine(true)}
             />
-      
+
             <span className="mt-[6px] block text-[#E87855]">
               {showSecondLine ? (
                 <StaggeredText
@@ -57,7 +63,10 @@ export default function AboutPage() {
                   className="block"
                 />
               ) : (
-                <span className="invisible block" aria-hidden="true">
+                <span
+                  className="invisible block"
+                  aria-hidden="true"
+                >
                   Grounded in engineering.
                 </span>
               )}
@@ -72,11 +81,13 @@ export default function AboutPage() {
           </p>
         </section>
 
+        {/* BACKGROUND */}
         <section className="grid gap-12 border-t border-white/10 py-20 md:grid-cols-[1fr_1.5fr]">
           <div>
             <p className="font-mono text-xs tracking-widest text-[#B5E0E4]">
               01 / THE BACKGROUND
             </p>
+
             <h2 className="font-hero mt-5 text-3xl">
               Why learn here?
             </h2>
@@ -88,12 +99,14 @@ export default function AboutPage() {
               business education, and hands-on development
               of AI-powered applications.
             </p>
+
             <p>
               I work across software architecture, data
               engineering, machine learning, and modern web
               development, with an emphasis on understanding
               the systems behind the tools.
             </p>
+
             <p className="font-medium text-[#F5E8D2]">
               I believe the best way to explain technology
               is to build with it, examine where it fails,
@@ -102,6 +115,7 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* SELECTED PROJECTS */}
         <section className="border-t border-white/10 py-20">
           <p className="font-mono text-xs tracking-widest text-[#B5E0E4]">
             02 / SELECTED WORK
@@ -111,6 +125,7 @@ export default function AboutPage() {
             <h2 className="font-hero text-4xl tracking-tight">
               Beyond the tutorials.
             </h2>
+
             <p className="max-w-md text-sm leading-7 text-[#B9B0B4]">
               Independent projects exploring how AI, data,
               and software engineering come together.
@@ -127,7 +142,10 @@ export default function AboutPage() {
                   <span className="font-mono text-xs text-[#B5E0E4]">
                     {project.number}
                   </span>
-                  <span className="text-[#E87855]">↗</span>
+
+                  <span className="text-[#E87855]">
+                    ↗
+                  </span>
                 </div>
 
                 <p className="font-mono text-[10px] tracking-widest text-[#E87855]">
@@ -157,11 +175,13 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* EDUCATION */}
         <section className="grid gap-12 border-t border-white/10 py-20 md:grid-cols-[1fr_1.5fr]">
           <div>
             <p className="font-mono text-xs tracking-widest text-[#B5E0E4]">
               03 / EDUCATION
             </p>
+
             <h2 className="font-hero mt-5 text-3xl">
               The foundation.
             </h2>
@@ -172,9 +192,11 @@ export default function AboutPage() {
               <h3 className="text-xl font-medium">
                 Northwestern University
               </h3>
+
               <p className="mt-2 text-sm text-[#B9B0B4]">
                 School of Professional Studies
               </p>
+
               <p className="mt-1 text-sm text-[#E87855]">
                 Professional Certificate in Full-Stack Web Development
               </p>
@@ -184,6 +206,7 @@ export default function AboutPage() {
               <h3 className="text-xl font-medium">
                 Master of Business Administration
               </h3>
+
               <p className="mt-2 text-sm text-[#B9B0B4]">
                 Business and management education
               </p>
@@ -191,25 +214,31 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* PHILOSOPHY */}
         <section className="rounded-2xl bg-[#F5E8D2] px-8 py-14 text-[#201B2A] md:px-14">
           <p className="font-mono text-xs tracking-widest text-[#C45B3F]">
             THE PHILOSOPHY
           </p>
+
           <h2 className="font-hero mt-5 max-w-3xl text-3xl font-medium leading-tight tracking-tight md:text-5xl">
             Understand the concepts.
+
             <span className="block text-[#C45B3F]">
               Build the systems.
             </span>
+
             Engineer with intention.
           </h2>
+
           <p className="mt-6 max-w-xl text-sm leading-7 text-[#514A52]">
             From your first question about artificial
             intelligence to designing reliable applications,
             learning should be practical, progressive,
             and grounded in fundamentals.
           </p>
+
           <Link
-            href="/"
+            href="/learn"
             className="mt-9 inline-flex rounded-full bg-[#FFD000] px-7 py-3 text-sm font-semibold text-[#201B2A] transition hover:bg-[#F0BD00]"
           >
             Start Learning ↗
