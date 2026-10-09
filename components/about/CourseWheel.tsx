@@ -60,8 +60,6 @@ export default function CourseWheel() {
       </div>
 
       <div className="relative h-[440px] w-full overflow-hidden lg:h-[500px]">
-        <div className="pointer-events-none absolute inset-x-0 top-1/2 z-10 -translate-y-1/2 border-y border-[#E87855]/30 bg-[#E87855]/[0.06] py-9" />
-
         <OptionWheel
           items={courses.map((course) => course.title)}
           defaultSelected={3}
