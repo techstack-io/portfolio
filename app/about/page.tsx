@@ -44,7 +44,6 @@ export default function AboutPage() {
               delay={140}
               duration={0.7}
               className="block text-[#F5E8D2]"
-              onAnimationComplete={handleFirstLineComplete}
             />
       
             <span className="mt-[6px] block text-[#E87855]">
