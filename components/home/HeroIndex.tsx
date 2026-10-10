@@ -1,37 +1,15 @@
 import Link from "next/link";
-import DotField from "@/components/ui/DotField"; 
-import HeroHeadlineText from "./HeroHeadlineText";
-import HeroTicket from "./HeroTicket";
+import TypographicWall from "@/components/ui/TypographicWall";
+// import HeroHeadlineText from "./HeroHeadlineText";
 
 export default function Hero() {
   return (
     <section
       id="top"
-      className="relative isolate min-h-screen overflow-visible bg-[#0a0a0a] text-[#F5E6CC]"
+      className="relative isolate min-h-screen overflow-visible bg-[#201C2A] text-[#F5E6CC]"
     >
-      {/* Interactive dotted background */}
-      <div className="absolute inset-0 z-0">
-        <DotField
-          dotRadius={1.5}
-          dotSpacing={20}
-          cursorRadius={240}
-          cursorForce={0.1}
-          bulgeOnly
-          bulgeStrength={35}
-          glowRadius={200}
-          sparkle={false}
-          waveAmplitude={0}
-          gradientFrom="rgba(180, 223, 229, 0.30)"
-          gradientTo="rgba(210, 253, 255, 0.15)"
-          glowColor="#B4DFE5"
-        />
-      </div>
-
-      {/* Background overlay */}
-      <div className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-r from-[#201B2A]/65 via-[#201B2A]/20 to-transparent" />
-
       {/* Main hero layout */}
-      <div className="relative z-10 mx-auto grid min-h-screen max-w-[1600px] items-center gap-10 px-5 pb-16 pt-28 md:grid-cols-12 md:gap-8 md:px-8 md:pb-12 md:pt-0 lg:min-h-[calc(100svh-5rem)]">
+      <div className="relative z-10 mx-auto grid min-h-screen max-w-[1600px] items-center gap-10 px-5 pb-16 pt-28 md:grid-cols-12 md:gap-8 md:px-8 md:pb-12 md:pt-24 lg:min-h-[calc(100svh-5rem)]">
 
         {/* Left column */}
         <div className="relative z-20 md:col-span-7">
@@ -46,7 +24,7 @@ export default function Hero() {
           </div>
 
           {/* Animated headline */}
-          <HeroHeadlineText />
+          {/* <HeroHeadlineText /> */}
 
           {/* Introduction */}
           <p className="mt-7 max-w-[540px] text-[17px] leading-7 text-[#F5E6CC]/70">
@@ -98,9 +76,9 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right column: Interactive ticket */}
-        <div className="relative z-10 min-w-0 overflow-visible md:col-span-5 md:-translate-x-6 lg:-translate-x-16 lg:-translate-y-10">
-          <HeroTicket />
+        {/* Right column: Only rendering your component here */}
+        <div className="relative z-10 flex min-w-0 items-center justify-center overflow-visible md:col-span-5 lg:-translate-y-8 w-full h-[500px] bg-black/40">
+          <TypographicWall />
         </div>
 
       </div>

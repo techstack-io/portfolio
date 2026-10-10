@@ -16,7 +16,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50 border-b border-white/10 bg-[#201B2A]/75 backdrop-blur-xl">
+    <header className="absolute inset-x-0 top-0 z-50 border-b border-white/10 bg-[#0a0a0a]/10 backdrop-blur-xl">
       <div className="mx-auto flex h-20 max-w-[1600px] items-center justify-between px-5 md:px-10">
       <Link href="/" className="flex items-center gap-4">
       <Image
